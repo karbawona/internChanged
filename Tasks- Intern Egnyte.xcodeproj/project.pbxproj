@@ -37,8 +37,8 @@
 		6F4789A922775E67005C2F87 = {
 			isa = PBXGroup;
 			children = (
-				6F4789B422775E67005C2F87 /* Tasks- Intern Egnyte */,
 				6F4789B322775E67005C2F87 /* Products */,
+				6F4789B422775E67005C2F87 /* Tasks- Intern Egnyte */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +95,11 @@
 				TargetAttributes = {
 					6F4789B122775E67005C2F87 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -271,7 +276,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Tasks- Intern Egnyte/Tasks__Intern_Egnyte.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Tasks- Intern Egnyte/Info.plist";
@@ -289,7 +293,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Tasks- Intern Egnyte/Tasks__Intern_Egnyte.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Tasks- Intern Egnyte/Info.plist";
