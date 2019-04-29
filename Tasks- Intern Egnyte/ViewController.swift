@@ -8,12 +8,17 @@
 
 import Cocoa
 
+let urlWeather = "http://codekata.com/data/04/weather.dat"
+let urlFootbal = "l"
+var fileWeather = Files(content: "")
+
 class ViewController: NSViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        fileWeather.downloadFile(nameURL: urlWeather)
 
-        // Do any additional setup after loading the view.
     }
 
     override var representedObject: Any? {
