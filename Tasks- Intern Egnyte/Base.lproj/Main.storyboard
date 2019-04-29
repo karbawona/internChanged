@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,21 +674,21 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Tasks__Intern_Egnyte" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="76" y="-54"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Tasks- Intern Egnyte" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titleVisibility="hidden" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="880" height="470"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="880" height="470"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -698,20 +699,94 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="75" y="269"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Tasks__Intern_Egnyte" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="4Wj-XD-Ha8">
+                        <rect key="frame" x="0.0" y="0.0" width="880" height="470"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yeI-b5-fuf">
+                                <rect key="frame" x="18" y="433" width="844" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="ugj-po-TBX">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <containerView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iq8-0C-5W7">
+                                <rect key="frame" x="0.0" y="0.0" width="880" height="394"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="jvS-Gu-S05" kind="embed" id="rgS-za-dP7"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yeI-b5-fuf" secondAttribute="trailing" constant="20" symbolic="YES" id="1Ec-CV-jNS"/>
+                            <constraint firstItem="yeI-b5-fuf" firstAttribute="top" secondItem="4Wj-XD-Ha8" secondAttribute="top" constant="20" symbolic="YES" id="BTi-fQ-QDZ"/>
+                            <constraint firstItem="yeI-b5-fuf" firstAttribute="leading" secondItem="4Wj-XD-Ha8" secondAttribute="leading" constant="20" symbolic="YES" id="HBr-Zk-2tm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="75" y="869"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="Bfj-Dk-78v">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="0" id="jvS-Gu-S05" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem identifier="" id="KkO-dA-glZ"/>
+                        <tabViewItem id="8iq-Xk-hhH"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="zSK-Ld-Exx">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <connections>
+                            <outlet property="delegate" destination="jvS-Gu-S05" id="JQr-in-vjb"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="zSK-Ld-Exx" id="acf-OM-Mdf"/>
+                        <segue destination="d0j-GX-jZz" kind="relationship" relationship="tabItems" id="Lhc-h8-Vw3"/>
+                        <segue destination="iOq-tm-16L" kind="relationship" relationship="tabItems" id="cK7-Eo-Vdp"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="rBB-bo-FkL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901" y="804"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="k8N-HW-oD9">
+            <objects>
+                <viewController title="Weather" id="d0j-GX-jZz" sceneMemberID="viewController">
+                    <view key="view" id="95R-uZ-ChZ">
+                        <rect key="frame" x="0.0" y="0.0" width="880" height="470"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="yg3-uR-hNb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="901" y="1392"/>
+        </scene>
+        <!--Football-->
+        <scene sceneID="B0T-bB-QwS">
+            <objects>
+                <customObject id="eXg-qa-4nX" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController title="Football" id="iOq-tm-16L" sceneMemberID="viewController">
+                    <view key="view" id="6yI-i3-6Hl">
+                        <rect key="frame" x="0.0" y="0.0" width="880" height="470"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1860" y="1375"/>
         </scene>
     </scenes>
 </document>
