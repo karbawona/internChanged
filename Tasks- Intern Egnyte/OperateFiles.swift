@@ -28,7 +28,8 @@ struct Files {
         
         if content != "" {
           return content
-        } else { return "pusty plik"}
+        } else { return "File is empty."}
     }
 
 }
+

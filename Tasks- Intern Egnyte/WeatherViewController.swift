@@ -8,11 +8,21 @@
 
 import Cocoa
 
+let urlWeather = "http://codekata.com/data/04/weather.dat"
+var fileWeather = Files(content: "")
+
+
 class WeatherViewController: NSViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var labelDay: NSTextField!
+    
+    
+        override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+            
+        fileWeather.downloadFile(nameURL: urlWeather)
+        labelDay.stringValue = fileWeather.getContent()
     }
+    
     
 }

@@ -58,12 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				6F4789B522775E67005C2F87 /* AppDelegate.swift */,
-				6F4789B722775E67005C2F87 /* ViewController.swift */,
 				6F4789B922775E68005C2F87 /* Assets.xcassets */,
 				6F4789BB22775E68005C2F87 /* Main.storyboard */,
 				6F4789BE22775E68005C2F87 /* Info.plist */,
 				6F4789BF22775E68005C2F87 /* Tasks__Intern_Egnyte.entitlements */,
 				6F4789C722778314005C2F87 /* OperateFiles.swift */,
+				6F4789B722775E67005C2F87 /* ViewController.swift */,
 				6F4789C92277A324005C2F87 /* WeatherViewController.swift */,
 			);
 			path = "Tasks- Intern Egnyte";
