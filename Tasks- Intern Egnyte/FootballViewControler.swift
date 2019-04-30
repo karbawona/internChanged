@@ -22,4 +22,11 @@ class FootballViewControler: NSViewController {
         labelFootball.stringValue = fileFootball.getContent()
     }
     
+    func findSmallestTemp() {
+        for _ in fileFootball.content {
+            print(fileFootball.getContent().count)
+        }
+    }
+    
+    
 }

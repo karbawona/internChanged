@@ -14,6 +14,7 @@
 		6F4789C822778314005C2F87 /* OperateFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4789C722778314005C2F87 /* OperateFiles.swift */; };
 		6F4789CA2277A324005C2F87 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4789C92277A324005C2F87 /* WeatherViewController.swift */; };
 		6F4789D022785BD4005C2F87 /* FootballViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4789CF22785BD4005C2F87 /* FootballViewControler.swift */; };
+		6F4789D22278C7F5005C2F87 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4789D12278C7F5005C2F87 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		6F4789C722778314005C2F87 /* OperateFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperateFiles.swift; sourceTree = "<group>"; };
 		6F4789C92277A324005C2F87 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		6F4789CF22785BD4005C2F87 /* FootballViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballViewControler.swift; sourceTree = "<group>"; };
+		6F4789D12278C7F5005C2F87 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				6F4789B722775E67005C2F87 /* ViewController.swift */,
 				6F4789C92277A324005C2F87 /* WeatherViewController.swift */,
 				6F4789CF22785BD4005C2F87 /* FootballViewControler.swift */,
+				6F4789D12278C7F5005C2F87 /* Weather.swift */,
 			);
 			path = "Tasks- Intern Egnyte";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				6F4789D022785BD4005C2F87 /* FootballViewControler.swift in Sources */,
 				6F4789CA2277A324005C2F87 /* WeatherViewController.swift in Sources */,
 				6F4789B622775E67005C2F87 /* AppDelegate.swift in Sources */,
+				6F4789D22278C7F5005C2F87 /* Weather.swift in Sources */,
 				6F4789C822778314005C2F87 /* OperateFiles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
