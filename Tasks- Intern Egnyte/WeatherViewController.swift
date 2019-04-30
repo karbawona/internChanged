@@ -19,14 +19,17 @@ class WeatherViewController: NSViewController {
         super.viewDidLoad()
         fileWeather.downloadFile(nameURL: urlWeather)
         labelDay.stringValue = fileWeather.getContent()
-        findSmallestTemp()
+        createArrayWeather()
     }
     
-    func findSmallestTemp() {
-//        for char in fileWeather.content {
-//            print("Found character: \(char)")
-//        }
-        print(fileWeather.content)
+
+
+
+    func createArrayWeather() {
+       var temp = fileWeather.getContent().split(separator: "\n")
+        print (temp)
+        //let weatherObj = Weather(day: String(temp[0]), max: String(temp[1]), min: String(temp[2]))
+       // print(weatherObj.mnT)
     }
     
 }

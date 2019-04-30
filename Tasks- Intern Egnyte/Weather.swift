@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Weather : Codable {
+struct Weather {
     var dy: String
     var mxT: String
     var mnT: String
