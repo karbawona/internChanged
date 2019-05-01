@@ -14,14 +14,14 @@ class WeatherViewController: NSViewController {
     let urlWeather = "http://codekata.com/data/04/weather.dat"
     var fileWeather = Files(content: "")
     @IBOutlet weak var labelDay: NSTextField!
-    var arrayObjsWeather : Array <Weather> = []
+    var arrayObjectsWeather : Array <Weather> = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fileWeather.downloadFile(nameURL: urlWeather)
-        arrayObjsWeather = createArrayWeather()
-        labelDay.stringValue = "The smallest spread temperature was \( calculateTemp(arrayObjects: arrayObjsWeather)) day"
+        arrayObjectsWeather = createArrayWeather()
+        labelDay.stringValue = "The smallest spread temperature was \( calculateTemp(arrayObjects: arrayObjectsWeather)) day"
     }
     
 
@@ -47,11 +47,11 @@ class WeatherViewController: NSViewController {
 
 
         var tempSpread : Array <Int> = Array()
+        var minTemp : Int
+        var maxTemp : Int
 
+        
         for index in arrayObjects {
-
-            var minTemp : Int
-            var maxTemp : Int
 
             if Int(index.mnT) != nil {
                 minTemp = Int(index.mnT)!
