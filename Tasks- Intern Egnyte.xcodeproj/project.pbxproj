@@ -18,7 +18,19 @@
 		6F60AB7F2279ADC40064E24D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB7E2279ADC40064E24D /* Team.swift */; };
 		6F60AB85227A28B70064E24D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB84227A28B70064E24D /* WeatherService.swift */; };
 		6F60AB87227A2E3B0064E24D /* TeamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB86227A2E3B0064E24D /* TeamService.swift */; };
+		6F60AB95227A332B0064E24D /* Tasks__Intern_EgnyteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB94227A332B0064E24D /* Tasks__Intern_EgnyteTests.swift */; };
+		6F60AB9D227A3D510064E24D /* FilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB9C227A3D510064E24D /* FilesTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F60AB97227A332B0064E24D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F4789AA22775E67005C2F87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F4789B122775E67005C2F87;
+			remoteInfo = "Tasks- Intern Egnyte";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6F4789B222775E67005C2F87 /* Tasks- Intern Egnyte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tasks- Intern Egnyte.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,10 +47,21 @@
 		6F60AB7E2279ADC40064E24D /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		6F60AB84227A28B70064E24D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		6F60AB86227A2E3B0064E24D /* TeamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamService.swift; sourceTree = "<group>"; };
+		6F60AB92227A332A0064E24D /* Tasks- Intern EgnyteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tasks- Intern EgnyteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F60AB94227A332B0064E24D /* Tasks__Intern_EgnyteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks__Intern_EgnyteTests.swift; sourceTree = "<group>"; };
+		6F60AB96227A332B0064E24D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F60AB9C227A3D510064E24D /* FilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6F4789AF22775E67005C2F87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F60AB8F227A332A0064E24D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +74,7 @@
 		6F4789A922775E67005C2F87 = {
 			isa = PBXGroup;
 			children = (
+				6F60AB93227A332B0064E24D /* Tasks- Intern EgnyteTests */,
 				6F4789B322775E67005C2F87 /* Products */,
 				6F4789B422775E67005C2F87 /* Tasks- Intern Egnyte */,
 			);
@@ -60,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				6F4789B222775E67005C2F87 /* Tasks- Intern Egnyte.app */,
+				6F60AB92227A332A0064E24D /* Tasks- Intern EgnyteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,10 +92,10 @@
 		6F4789B422775E67005C2F87 /* Tasks- Intern Egnyte */ = {
 			isa = PBXGroup;
 			children = (
+				6F60AB8A227A312F0064E24D /* Team */,
+				6F60AB89227A310F0064E24D /* File */,
 				6F60AB83227A06D00064E24D /* View */,
-				6F60AB82227A034D0064E24D /* File */,
 				6F60AB81227A032E0064E24D /* Weather */,
-				6F60AB80227A02FD0064E24D /* Football */,
 				6F4789B522775E67005C2F87 /* AppDelegate.swift */,
 				6F4789B922775E68005C2F87 /* Assets.xcassets */,
 				6F4789BB22775E68005C2F87 /* Main.storyboard */,
@@ -78,15 +103,6 @@
 				6F4789BF22775E68005C2F87 /* Tasks__Intern_Egnyte.entitlements */,
 			);
 			path = "Tasks- Intern Egnyte";
-			sourceTree = "<group>";
-		};
-		6F60AB80227A02FD0064E24D /* Football */ = {
-			isa = PBXGroup;
-			children = (
-				6F60AB7E2279ADC40064E24D /* Team.swift */,
-				6F60AB86227A2E3B0064E24D /* TeamService.swift */,
-			);
-			name = Football;
 			sourceTree = "<group>";
 		};
 		6F60AB81227A032E0064E24D /* Weather */ = {
@@ -98,14 +114,6 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
-		6F60AB82227A034D0064E24D /* File */ = {
-			isa = PBXGroup;
-			children = (
-				6F4789C722778314005C2F87 /* Files.swift */,
-			);
-			name = File;
-			sourceTree = "<group>";
-		};
 		6F60AB83227A06D00064E24D /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +122,33 @@
 				6F4789C92277A324005C2F87 /* WeatherViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6F60AB89227A310F0064E24D /* File */ = {
+			isa = PBXGroup;
+			children = (
+				6F4789C722778314005C2F87 /* Files.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		6F60AB8A227A312F0064E24D /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				6F60AB7E2279ADC40064E24D /* Team.swift */,
+				6F60AB86227A2E3B0064E24D /* TeamService.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		6F60AB93227A332B0064E24D /* Tasks- Intern EgnyteTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F60AB94227A332B0064E24D /* Tasks__Intern_EgnyteTests.swift */,
+				6F60AB96227A332B0064E24D /* Info.plist */,
+				6F60AB9C227A3D510064E24D /* FilesTests.swift */,
+			);
+			path = "Tasks- Intern EgnyteTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +171,24 @@
 			productReference = 6F4789B222775E67005C2F87 /* Tasks- Intern Egnyte.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6F60AB91227A332A0064E24D /* Tasks- Intern EgnyteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F60AB99227A332B0064E24D /* Build configuration list for PBXNativeTarget "Tasks- Intern EgnyteTests" */;
+			buildPhases = (
+				6F60AB8E227A332A0064E24D /* Sources */,
+				6F60AB8F227A332A0064E24D /* Frameworks */,
+				6F60AB90227A332A0064E24D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F60AB98227A332B0064E24D /* PBXTargetDependency */,
+			);
+			name = "Tasks- Intern EgnyteTests";
+			productName = "Tasks- Intern EgnyteTests";
+			productReference = 6F60AB92227A332A0064E24D /* Tasks- Intern EgnyteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -154,6 +207,10 @@
 							};
 						};
 					};
+					6F60AB91227A332A0064E24D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6F4789B122775E67005C2F87;
+					};
 				};
 			};
 			buildConfigurationList = 6F4789AD22775E67005C2F87 /* Build configuration list for PBXProject "Tasks- Intern Egnyte" */;
@@ -170,6 +227,7 @@
 			projectRoot = "";
 			targets = (
 				6F4789B122775E67005C2F87 /* Tasks- Intern Egnyte */,
+				6F60AB91227A332A0064E24D /* Tasks- Intern EgnyteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +239,13 @@
 			files = (
 				6F4789BA22775E68005C2F87 /* Assets.xcassets in Resources */,
 				6F4789BD22775E68005C2F87 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F60AB90227A332A0064E24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +268,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6F60AB8E227A332A0064E24D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F60AB95227A332B0064E24D /* Tasks__Intern_EgnyteTests.swift in Sources */,
+				6F60AB9D227A3D510064E24D /* FilesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F60AB98227A332B0064E24D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F4789B122775E67005C2F87 /* Tasks- Intern Egnyte */;
+			targetProxy = 6F60AB97227A332B0064E24D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6F4789BB22775E68005C2F87 /* Main.storyboard */ = {
@@ -366,6 +448,44 @@
 			};
 			name = Release;
 		};
+		6F60AB9A227A332B0064E24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tasks- Intern EgnyteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AKlein.Tasks--Intern-EgnyteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tasks- Intern Egnyte.app/Contents/MacOS/Tasks- Intern Egnyte";
+			};
+			name = Debug;
+		};
+		6F60AB9B227A332B0064E24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tasks- Intern EgnyteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AKlein.Tasks--Intern-EgnyteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tasks- Intern Egnyte.app/Contents/MacOS/Tasks- Intern Egnyte";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -383,6 +503,15 @@
 			buildConfigurations = (
 				6F4789C322775E68005C2F87 /* Debug */,
 				6F4789C422775E68005C2F87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F60AB99227A332B0064E24D /* Build configuration list for PBXNativeTarget "Tasks- Intern EgnyteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F60AB9A227A332B0064E24D /* Debug */,
+				6F60AB9B227A332B0064E24D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -4,22 +4,23 @@ struct Files {
     
     var content: String
     
+    init(cont: String) {
+        content = cont
+    }
+    
     mutating func downloadFile (nameURL: String) {
-        
-        let url = URL(string: nameURL)!
-        
         do {
-            content.self = try String(contentsOf: url)
+            content.self = try String(contentsOf: URL(string: nameURL)!)
         } catch {
             print(error)
         }
     }
     
     func getContent() -> String {
-        
         if "" != content {
-          return content
-        } else { return "File is empty."}
+            return content
+        } else {
+            return "File is empty."
+        }
     }
 }
-

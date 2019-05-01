@@ -18,10 +18,10 @@ struct WeatherService {
     }
     
     func findTheDay() -> Int {
-    return findDayWithSmallestTemperatureSpread(weatherObjects: createArrayOfWeatherObjects())
+        return findDayWithSmallestTemperatureSpread(weatherObjects: createArrayOfWeatherObjects())
     }
     
-    func findDayWithSmallestTemperatureSpread (weatherObjects: Array <Weather>) -> Int {
+    private func findDayWithSmallestTemperatureSpread (weatherObjects: Array <Weather>) -> Int {
         var spreads : Array <Int> = []
         
         for index in weatherObjects {
@@ -31,7 +31,7 @@ struct WeatherService {
         return spreads.firstIndex(of: spreads.min()!)! + 1
     }
     
-    func createArrayOfWeatherObjects() -> Array <Weather> {
+    private func createArrayOfWeatherObjects() -> Array <Weather> {
         var arrayOfWeatherObjects: Array <Weather> = []
         let arrayOfWeatherRows = fileWeather.getContent().components(separatedBy: "\n")
         var splittedWeatherAttributes: Array <String.SubSequence> = []
@@ -44,7 +44,7 @@ struct WeatherService {
         return arrayOfWeatherObjects
     }
     
-    fileprivate func removeStarSignAndParseToInt(_ text: String) -> Int {
+    private func removeStarSignAndParseToInt(_ text: String) -> Int {
         if nil != Int(text) {
             return Int(text)!
         } else {

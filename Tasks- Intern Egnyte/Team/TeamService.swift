@@ -6,14 +6,14 @@ struct TeamService {
     private var fileFootball = Files(content: "")
     
     init() {
-       fileFootball.downloadFile(nameURL: URL_FOOTBALL)
+        fileFootball.downloadFile(nameURL: URL_FOOTBALL)
     }
     
     func findTeamName() -> String {
         return findTeamNameWithSmallestForAndAgainstGoalsDelta(teamObjects: createArrayOfTeamObjects())
     }
     
-    func createArrayOfTeamObjects() -> Array <Team> {
+    private func createArrayOfTeamObjects() -> Array <Team> {
         var arrayOfRowFootball = fileFootball.getContent().components(separatedBy: "\n")
         var indexToRemove = -1
         var arrayOfTeamObjects: Array <Team> = []
@@ -29,7 +29,7 @@ struct TeamService {
         return arrayOfTeamObjects
     }
     
-    func findTeamNameWithSmallestForAndAgainstGoalsDelta (teamObjects: Array <Team>) -> String {
+    private func findTeamNameWithSmallestForAndAgainstGoalsDelta (teamObjects: Array <Team>) -> String {
         var delta : Array <Int> = []
         
         for index in teamObjects {
@@ -39,7 +39,7 @@ struct TeamService {
         return teamObjects[findIndexOfMinimalDelta(delta)].getName()
     }
     
-    fileprivate func removeUnnecessaryRow(_ arrayOfRowFootball: inout [String], _ indexToRemove: inout Int) {
+    private func removeUnnecessaryRow(_ arrayOfRowFootball: inout [String], _ indexToRemove: inout Int) {
         indexToRemove = findIndexToRemove(arrayOfRowFootball)
         
         if  -1 != indexToRemove {
@@ -47,7 +47,7 @@ struct TeamService {
         }
     }
     
-    fileprivate func findIndexToRemove(_ arrayOfRowFootball: [String]) -> Int {
+    private func findIndexToRemove(_ arrayOfRowFootball: [String]) -> Int {
         for (index, element) in arrayOfRowFootball.enumerated() where element.contains("--") {
             return index
         }
@@ -55,7 +55,7 @@ struct TeamService {
         return -1
     }
     
-    fileprivate func findIndexOfMinimalDelta(_ delta: [Int]) -> Int {
+    private func findIndexOfMinimalDelta(_ delta: [Int]) -> Int {
         return delta.firstIndex(of: delta.min()!)!
     }
 }
