@@ -10,15 +10,25 @@ import Foundation
 
 struct Team {
     
-    var team: String
-    var forGoals: String
-    var aginstGoals: String
+   private var name: String
+   private var forGoals: String
+   private var againstGoals: String
     
-    init(teamFootball: String, fGoals: String, aGoal: String) {
-        team = teamFootball
+    init(teamName: String, fGoals: String, aGoals: String) {
+        name = teamName
         forGoals =  fGoals
-        aginstGoals = aGoal
+        againstGoals = aGoals
     }
     
-
+    public func getName() -> String {
+        return name
+    }
+    
+    public func getForGoals() -> String {
+        return forGoals
+    }
+    
+    public func getAgainstGoals() -> String {
+        return againstGoals
+    }
 }

@@ -11,11 +11,13 @@
 		6F4789B822775E67005C2F87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4789B722775E67005C2F87 /* ViewController.swift */; };
 		6F4789BA22775E68005C2F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4789B922775E68005C2F87 /* Assets.xcassets */; };
 		6F4789BD22775E68005C2F87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4789BB22775E68005C2F87 /* Main.storyboard */; };
-		6F4789C822778314005C2F87 /* OperateFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4789C722778314005C2F87 /* OperateFiles.swift */; };
+		6F4789C822778314005C2F87 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4789C722778314005C2F87 /* Files.swift */; };
 		6F4789CA2277A324005C2F87 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4789C92277A324005C2F87 /* WeatherViewController.swift */; };
-		6F4789D022785BD4005C2F87 /* FootballViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4789CF22785BD4005C2F87 /* FootballViewControler.swift */; };
+		6F4789D022785BD4005C2F87 /* TeamViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4789CF22785BD4005C2F87 /* TeamViewControler.swift */; };
 		6F4789D22278C7F5005C2F87 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4789D12278C7F5005C2F87 /* Weather.swift */; };
 		6F60AB7F2279ADC40064E24D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB7E2279ADC40064E24D /* Team.swift */; };
+		6F60AB85227A28B70064E24D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB84227A28B70064E24D /* WeatherService.swift */; };
+		6F60AB87227A2E3B0064E24D /* TeamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB86227A2E3B0064E24D /* TeamService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +28,13 @@
 		6F4789BC22775E68005C2F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F4789BE22775E68005C2F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F4789BF22775E68005C2F87 /* Tasks__Intern_Egnyte.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tasks__Intern_Egnyte.entitlements; sourceTree = "<group>"; };
-		6F4789C722778314005C2F87 /* OperateFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperateFiles.swift; sourceTree = "<group>"; };
+		6F4789C722778314005C2F87 /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
 		6F4789C92277A324005C2F87 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
-		6F4789CF22785BD4005C2F87 /* FootballViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballViewControler.swift; sourceTree = "<group>"; };
+		6F4789CF22785BD4005C2F87 /* TeamViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewControler.swift; sourceTree = "<group>"; };
 		6F4789D12278C7F5005C2F87 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		6F60AB7E2279ADC40064E24D /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		6F60AB84227A28B70064E24D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		6F60AB86227A2E3B0064E24D /* TeamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,19 +67,53 @@
 		6F4789B422775E67005C2F87 /* Tasks- Intern Egnyte */ = {
 			isa = PBXGroup;
 			children = (
+				6F60AB83227A06D00064E24D /* View */,
+				6F60AB82227A034D0064E24D /* File */,
+				6F60AB81227A032E0064E24D /* Weather */,
+				6F60AB80227A02FD0064E24D /* Football */,
 				6F4789B522775E67005C2F87 /* AppDelegate.swift */,
 				6F4789B922775E68005C2F87 /* Assets.xcassets */,
 				6F4789BB22775E68005C2F87 /* Main.storyboard */,
 				6F4789BE22775E68005C2F87 /* Info.plist */,
 				6F4789BF22775E68005C2F87 /* Tasks__Intern_Egnyte.entitlements */,
-				6F4789C722778314005C2F87 /* OperateFiles.swift */,
-				6F4789B722775E67005C2F87 /* ViewController.swift */,
-				6F4789C92277A324005C2F87 /* WeatherViewController.swift */,
-				6F4789CF22785BD4005C2F87 /* FootballViewControler.swift */,
-				6F4789D12278C7F5005C2F87 /* Weather.swift */,
-				6F60AB7E2279ADC40064E24D /* Team.swift */,
 			);
 			path = "Tasks- Intern Egnyte";
+			sourceTree = "<group>";
+		};
+		6F60AB80227A02FD0064E24D /* Football */ = {
+			isa = PBXGroup;
+			children = (
+				6F60AB7E2279ADC40064E24D /* Team.swift */,
+				6F60AB86227A2E3B0064E24D /* TeamService.swift */,
+			);
+			name = Football;
+			sourceTree = "<group>";
+		};
+		6F60AB81227A032E0064E24D /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				6F4789D12278C7F5005C2F87 /* Weather.swift */,
+				6F60AB84227A28B70064E24D /* WeatherService.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		6F60AB82227A034D0064E24D /* File */ = {
+			isa = PBXGroup;
+			children = (
+				6F4789C722778314005C2F87 /* Files.swift */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
+		6F60AB83227A06D00064E24D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F4789B722775E67005C2F87 /* ViewController.swift */,
+				6F4789CF22785BD4005C2F87 /* TeamViewControler.swift */,
+				6F4789C92277A324005C2F87 /* WeatherViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,13 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F60AB85227A28B70064E24D /* WeatherService.swift in Sources */,
 				6F4789B822775E67005C2F87 /* ViewController.swift in Sources */,
-				6F4789D022785BD4005C2F87 /* FootballViewControler.swift in Sources */,
+				6F4789D022785BD4005C2F87 /* TeamViewControler.swift in Sources */,
 				6F4789CA2277A324005C2F87 /* WeatherViewController.swift in Sources */,
 				6F4789B622775E67005C2F87 /* AppDelegate.swift in Sources */,
 				6F4789D22278C7F5005C2F87 /* Weather.swift in Sources */,
 				6F60AB7F2279ADC40064E24D /* Team.swift in Sources */,
-				6F4789C822778314005C2F87 /* OperateFiles.swift in Sources */,
+				6F60AB87227A2E3B0064E24D /* TeamService.swift in Sources */,
+				6F4789C822778314005C2F87 /* Files.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
