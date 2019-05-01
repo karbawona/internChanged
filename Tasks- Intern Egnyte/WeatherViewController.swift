@@ -26,10 +26,18 @@ class WeatherViewController: NSViewController {
 
 
     func createArrayWeather() {
-       var temp = fileWeather.getContent().split(separator: "\n")
+
+        let temp = fileWeather.getContent().components(separatedBy: "\n")
         print (temp)
-        //let weatherObj = Weather(day: String(temp[0]), max: String(temp[1]), min: String(temp[2]))
-       // print(weatherObj.mnT)
+        
+        var arrayObjs: Array <Weather> = []
+
+        for index in 2...temp.count-3 {
+        let temp2 = temp[index].split(separator: " ", maxSplits: 3)
+        print (temp2)
+            arrayObjs.append( Weather(day: String(temp2[0]), max: String(temp2[1]), min: String(temp2[2]) ))
+            print(arrayObjs[index-2])
+           }
     }
     
 }
