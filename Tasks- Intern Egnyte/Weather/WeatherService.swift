@@ -11,7 +11,7 @@ import Foundation
 struct WeatherService {
     
     private let URL_WEATHER = "http://codekata.com/data/04/weather.dat"
-    private var fileWeather = Files(content: "")
+    private var fileWeather = Files(cont: "")
     
     init() {
         fileWeather.downloadFile(nameURL: URL_WEATHER)

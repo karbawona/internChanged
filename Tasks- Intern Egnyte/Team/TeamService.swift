@@ -3,7 +3,7 @@ import Foundation
 struct TeamService {
     
     private let URL_FOOTBALL = "http://codekata.com/data/04/football.dat"
-    private var fileFootball = Files(content: "")
+    private var fileFootball = Files(cont: "")
     
     init() {
         fileFootball.downloadFile(nameURL: URL_FOOTBALL)
