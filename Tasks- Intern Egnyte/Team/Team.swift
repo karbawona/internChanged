@@ -1,11 +1,4 @@
-//
-//  Football.swift
-//  Tasks- Intern Egnyte
-//
-//  Created by Ola on 01/05/2019.
-//  Copyright © 2019 Aleksandra Klein. All rights reserved.
-//
-
+//Aleksandra Klein
 import Foundation
 
 struct Team {
