@@ -1,24 +1,21 @@
-//
-//  WeatherService.swift
-//  Tasks- Intern Egnyte
-//
-//  Created by Ola on 01/05/2019.
-//  Copyright © 2019 Aleksandra Klein. All rights reserved.
-//
-
+//Aleksandra Klein
 import Foundation
 
 struct WeatherService {
     
     private let URL_WEATHER = "http://codekata.com/data/04/weather.dat"
-    private var fileWeather = Files(cont: "")
+    private var fileWeather : Files
     
     init() {
+        fileWeather = Files(cont: "")
         fileWeather.downloadFile(nameURL: URL_WEATHER)
     }
     
-    func findTheDay() -> Int {
-        return findDayWithSmallestTemperatureSpread(weatherObjects: createArrayOfWeatherObjects())
+    func findTheDay() -> Int? {
+        guard let weatherobject = createArrayOfWeatherObjects() else {
+            return nil
+        }
+        return findDayWithSmallestTemperatureSpread(weatherObjects: weatherobject)
     }
     
     private func findDayWithSmallestTemperatureSpread (weatherObjects: Array <Weather>) -> Int {
@@ -31,9 +28,12 @@ struct WeatherService {
         return spreads.firstIndex(of: spreads.min()!)! + 1
     }
     
-    private func createArrayOfWeatherObjects() -> Array <Weather> {
+    private func createArrayOfWeatherObjects() -> Array <Weather>? {
         var arrayOfWeatherObjects: Array <Weather> = []
-        let arrayOfWeatherRows = fileWeather.getContent().components(separatedBy: "\n")
+        guard let extractedExpr: String = fileWeather.getContent() else {
+            return nil
+        }
+        let arrayOfWeatherRows = extractedExpr.components(separatedBy: "\n")
         var splittedWeatherAttributes: Array <String.SubSequence> = []
         
         for index in 2 ... arrayOfWeatherRows.count - 3 {

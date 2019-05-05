@@ -9,12 +9,18 @@ struct TeamService {
         fileFootball.downloadFile(nameURL: URL_FOOTBALL)
     }
     
-    func findTeamName() -> String {
-        return findTeamNameWithSmallestForAndAgainstGoalsDelta(teamObjects: createArrayOfTeamObjects())
+    func findTeamName() -> String? {
+        guard let objectTeam = createArrayOfTeamObjects() else {
+            return nil
+        }
+        return findTeamNameWithSmallestForAndAgainstGoalsDelta(teamObjects: objectTeam)
     }
     
-    private func createArrayOfTeamObjects() -> Array <Team> {
-        var arrayOfRowFootball = fileFootball.getContent().components(separatedBy: "\n")
+    private func createArrayOfTeamObjects() -> Array <Team>? {
+        guard let contentObject = fileFootball.getContent() else {
+            return nil
+        }
+        var arrayOfRowFootball = contentObject.components(separatedBy: "\n") 
         var indexToRemove = -1
         var arrayOfTeamObjects: Array <Team> = []
         

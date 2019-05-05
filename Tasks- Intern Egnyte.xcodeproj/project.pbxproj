@@ -19,7 +19,6 @@
 		6F60AB85227A28B70064E24D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB84227A28B70064E24D /* WeatherService.swift */; };
 		6F60AB87227A2E3B0064E24D /* TeamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB86227A2E3B0064E24D /* TeamService.swift */; };
 		6F60AB95227A332B0064E24D /* Tasks__Intern_EgnyteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB94227A332B0064E24D /* Tasks__Intern_EgnyteTests.swift */; };
-		6F60AB9D227A3D510064E24D /* FilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F60AB9C227A3D510064E24D /* FilesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,7 @@
 		6F60AB92227A332A0064E24D /* Tasks- Intern EgnyteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tasks- Intern EgnyteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F60AB94227A332B0064E24D /* Tasks__Intern_EgnyteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks__Intern_EgnyteTests.swift; sourceTree = "<group>"; };
 		6F60AB96227A332B0064E24D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F60AB9C227A3D510064E24D /* FilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesTests.swift; sourceTree = "<group>"; };
+		6FBD13C6227F57820000C111 /* Tasks- Intern Egnyte.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tasks- Intern Egnyte.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +91,7 @@
 		6F4789B422775E67005C2F87 /* Tasks- Intern Egnyte */ = {
 			isa = PBXGroup;
 			children = (
+				6FBD13C6227F57820000C111 /* Tasks- Intern Egnyte.entitlements */,
 				6F60AB8A227A312F0064E24D /* Team */,
 				6F60AB89227A310F0064E24D /* File */,
 				6F60AB83227A06D00064E24D /* View */,
@@ -146,7 +146,6 @@
 			children = (
 				6F60AB94227A332B0064E24D /* Tasks__Intern_EgnyteTests.swift */,
 				6F60AB96227A332B0064E24D /* Info.plist */,
-				6F60AB9C227A3D510064E24D /* FilesTests.swift */,
 			);
 			path = "Tasks- Intern EgnyteTests";
 			sourceTree = "<group>";
@@ -202,6 +201,9 @@
 					6F4789B122775E67005C2F87 = {
 						CreatedOnToolsVersion = 10.2.1;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
 							com.apple.Sandbox = {
 								enabled = 0;
 							};
@@ -273,7 +275,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F60AB95227A332B0064E24D /* Tasks__Intern_EgnyteTests.swift in Sources */,
-				6F60AB9D227A3D510064E24D /* FilesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tasks- Intern Egnyte/Tasks- Intern Egnyte.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Tasks- Intern Egnyte/Info.plist";
@@ -435,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tasks- Intern Egnyte/Tasks- Intern Egnyte.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Tasks- Intern Egnyte/Info.plist";

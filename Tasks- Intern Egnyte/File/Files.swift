@@ -1,6 +1,6 @@
 import Foundation
 
-struct Files {
+class Files {
     
     var content: String
     
@@ -8,7 +8,7 @@ struct Files {
         content = cont
     }
     
-    mutating func downloadFile (nameURL: String) {
+    func downloadFile (nameURL: String) {
         do {
             content.self = try String(contentsOf: URL(string: nameURL)!)
         } catch {
@@ -16,11 +16,11 @@ struct Files {
         }
     }
     
-    func getContent() -> String {
+    func getContent() -> String? {
         if "" != content {
             return content
         } else {
-            return "File is empty."
+            return nil
         }
     }
 }
